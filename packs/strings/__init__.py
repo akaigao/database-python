@@ -9,3 +9,25 @@ def menu(op):
 
     print('-'*40)
     return input(op).strip().replace('.', '').replace(',', '')
+
+
+def op_validation(op=''):
+    while True:
+        try:
+            op = int(op)
+            return option(op)
+        except Exception:
+            print('ERRO: por favor, digir um número inteiro válido.')
+            return op_validation(menu('Sua opção: '))
+
+
+def option(op):
+    if op == 1:
+        print('Opção 1')
+    elif op == 2:
+        print('Opção 2')
+    elif op == 3:
+        print('Opção 3')
+    else:
+        print('ERRO! Digite uma opção válida!')
+        op_validation(menu('Sua opção: '))
