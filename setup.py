@@ -1,4 +1,14 @@
+import os
 from lib import strings
+
+
+directory = '/Users/igao/Progamação/'
+file = directory + 'projects/1-database-python/contatos.txt'
+if os.path.isfile(file):
+    pass
+else:
+    new_file = open('contatos.txt', 'a')
+    print('Aquivo contatos.txt criado com sucesso!')
 
 
 def menu(op):
@@ -16,8 +26,8 @@ def menu(op):
 
 
 while True:
-    op = menu('Sua opção: ')
-    if op is False:
+    option = menu('Sua opção: ')
+    if option is False:
         continue
     else:
         break
