@@ -12,9 +12,7 @@ else:
 
 
 def menu(op):
-    print('-'*40)
-    print(f'{"MENU PRINCIPAL":^40}')
-    print('-'*40)
+    strings.title('MENU PRINCIPAL')
 
     print(' 1 - Ver pessoas cadastradas\n',
           '2 - Cadastrar nova pessoa\n',
@@ -22,7 +20,7 @@ def menu(op):
 
     print('-'*40)
     answer = input(op).strip().replace('.', '').replace(',', '')
-    return strings.op_validation(answer)
+    return strings.validation(answer)
 
 
 while True:
@@ -30,4 +28,6 @@ while True:
     if option is False:
         continue
     else:
-        break
+        option = strings.option(option)
+        if option == 3:
+            break

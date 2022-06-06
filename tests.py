@@ -1,7 +1,7 @@
-new_aqr = open('contatos.txt', "a")
-
-aqr = open('contatos.txt', 'r')
-
-for item in aqr.readlines():
-    print(item, end="")
-print()
+for pos, line in enumerate(file.readlines()):
+            value = line.split()
+            if pos % 2 == 1:
+                print(f"\t\t{value} anos\n", end="")
+            else:
+                print(value, end="")
+        print()
