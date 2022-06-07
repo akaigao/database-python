@@ -29,18 +29,11 @@ def option(op=0):
     elif op == 2:
         title('NOVO CADASTRO')
 
-        file = open('contatos.txt', 'a+')
-        datashet = []
-
-        datashet.append(input('Nome: '))
-        datashet.append(input('Idade: '))
-
-        for line in datashet:
-            file.write(line)
-            file.write("\n")
-
-        datashet.clear()
-        file.close()
+        with open('contatos.txt', 'a+') as file:
+            file.write(input('Nome: '))
+            file.write('\n')
+            file.write(input('Idade: '))
+            file.write('\n')
 
     elif op == 3:
         title('Saindo do sistema... Até logo!')
