@@ -1,14 +1,11 @@
-import os
 from lib import strings
 
-
-directory = '/Users/igao/Progamação/'
-file = directory + 'projects/1-database-python/contatos.txt'
-if os.path.isfile(file):
-    pass
-else:
-    new_file = open('contatos.txt', 'a')
-    print('Aquivo contatos.txt criado com sucesso!')
+try:
+    with open('contatos.txt', 'r') as file:
+        pass
+except IOError:
+    with open('contatos.txt', 'a') as file:
+        print('Arquvio contatos.txt criado com sucesso!')
 
 
 def menu(op):

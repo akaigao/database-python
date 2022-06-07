@@ -44,7 +44,6 @@ def option(op=0):
 
     elif op == 3:
         title('Saindo do sistema... Até logo!')
-
         return 3
 
     else:
