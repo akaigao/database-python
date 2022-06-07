@@ -18,13 +18,14 @@ def option(op=0):
         title('PESSOAS CADASTRADAS')
 
         with open('contatos.txt', 'r') as file:
-            for pos, line in enumerate(file.readlines()):
-                print(end="")
-                if pos % 2 == 1:
-                    print(f'\t{line}', end="")
+            file = [s.strip() for s in file]
+            file_list = [_str.split(' ') for _str in file]
+
+            for i, p in enumerate(file_list):
+                if i % 2 == 1:
+                    print(f'{p:>40} anos')
                 else:
-                    print(line, end="")
-            print()
+                    print(*p, end=" ")
 
     elif op == 2:
         title('NOVO CADASTRO')
