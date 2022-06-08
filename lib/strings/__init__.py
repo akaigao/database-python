@@ -4,10 +4,20 @@ def title(str):
     print('-'*40)
 
 
-def validation(op):
+def int_validation(op):
     while True:
         try:
             if op.isdigit() or int(op):
+                return True
+        except Exception:
+            print('\033[0;31mERRO: digite um número inteiro válido.\033[m')
+            return False
+
+
+def str_validation(op):
+    while True:
+        try:
+            if op.isalpha():
                 return True
         except Exception:
             print('\033[0;31mERRO: digite um número inteiro válido.\033[m')
@@ -31,10 +41,22 @@ def option(op):
         title('NOVO CADASTRO')
 
         with open('contatos.txt', 'a+') as file:
-            file.write(input('Nome: '))
-            file.write('\n')
-            file.write(input('Idade: '))
-            file.write('\n')
+            ok = False
+            while True:
+                name = input('Nome: ').strip()
+                ok = str_validation(name)
+                if ok:
+                    file.write(name)
+                    file.write('\n')
+                    break
+
+            while True:
+                age = input('Idade: ').strip()
+                ok = int_validation(age)
+                if ok:
+                    file.write(age)
+                    file.write('\n')
+                    break
 
     elif op == 3:
         title('Saindo do sistema... Até logo!')

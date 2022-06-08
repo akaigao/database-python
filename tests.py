@@ -1,4 +1,4 @@
-p = '0'
+p = 'dsdsd'
 
-if p.isdigit():
-    print(type(p))
+if p.isalpha:
+    print(p)

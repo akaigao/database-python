@@ -23,7 +23,7 @@ def menu(op=0):
 while True:
     option = menu('Sua opção: ')
     try:
-        strings.validation(option)
+        strings.int_validation(option)
         strings.option(int(option))
         if int(option) == 3:
             break
