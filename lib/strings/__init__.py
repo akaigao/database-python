@@ -7,13 +7,14 @@ def title(str):
 def validation(op):
     while True:
         try:
-            return int(op)
+            if op.isdigit() or int(op):
+                return True
         except Exception:
             print('\033[0;31mERRO: digite um número inteiro válido.\033[m')
             return False
 
 
-def option(op=0):
+def option(op):
     if op == 1:
         title('PESSOAS CADASTRADAS')
 

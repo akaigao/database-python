@@ -8,7 +8,7 @@ except IOError:
         print('Arquvio contatos.txt criado com sucesso!')
 
 
-def menu(op):
+def menu(op=0):
     strings.title('MENU PRINCIPAL')
 
     print(' 1 - Ver pessoas cadastradas\n',
@@ -17,14 +17,15 @@ def menu(op):
 
     print('-'*40)
     answer = input(op).strip().replace('.', '').replace(',', '')
-    return strings.validation(answer)
+    return answer
 
 
 while True:
     option = menu('Sua opção: ')
-    if option is False:
-        continue
-    else:
-        option = strings.option(option)
-        if option == 3:
+    try:
+        strings.validation(option)
+        strings.option(int(option))
+        if int(option) == 3:
             break
+    except Exception:
+        continue
