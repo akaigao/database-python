@@ -5,23 +5,20 @@ def title(str):
 
 
 def int_validation(op):
-    while True:
-        try:
-            if op.isdigit() or int(op):
-                return True
-        except Exception:
-            print('\033[0;31mERRO: digite um número inteiro válido.\033[m')
-            return False
+    try:
+        if op.isdigit() or int(op):
+            return True
+    except Exception:
+        print('\033[0;31mERRO: digite um número inteiro válido.\033[m')
+        return False
 
 
 def str_validation(op):
-    while True:
-        try:
-            if op.isalpha():
-                return True
-        except Exception:
-            print('\033[0;31mERRO: digite um número inteiro válido.\033[m')
-            return False
+    if not op.isdigit():
+        return True
+    else:
+        print('\033[0;31mERRO: digite um nome válido.\033[m')
+        return False
 
 
 def option(op):

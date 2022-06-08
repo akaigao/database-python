@@ -1,4 +1,4 @@
-p = 'dsdsd'
+p = '          '
 
-if p.isalpha:
-    print(p)
+a = p.strip()
+print(a, 'a')
