@@ -12,7 +12,7 @@ while True:
     option = interface.menu('Sua opção: ')
     try:
         interface.option(int(option))
-        if int(option) == 3:
+        if int(option) == 4:
             break
     except Exception:
         continue
