@@ -1,20 +1,21 @@
-Hitsugaya Toshiro
-100
-Sesshoumaru
-1000
-Meliodas
-3000
-Alucard
-598
-Naruto Uzumaki
-19
-Sasuke Uchicha
-19
-Gon Kilua
-13
-Meliodas Alucard Maru
-50
-Levi Ackerman
-30
-Eren Yeager
-15
+Hitsugaya Toshiro;100
+Sesshoumaru;1000
+Meliodas;3000
+Alucard;598
+Naruto Uzumaki;19
+Sasuke Uchicha;19
+Gon Kilua;13
+Meliodas Alucard Maru;50
+Levi Ackerman;30
+Eren Yeager;15
+Luffy;19
+TesteUm;001
+TesteDois;002
+TesteTres;002
+TesteQuatro;004
+TesteCinco;005
+TesteSeis;6
+None;7
+TesteOito;7
+TesteNove;9
+Teste10;10
