@@ -1,12 +1,18 @@
 Este é o projeto final proposto pelo professor Gustavo Guanabara
 no seu curso de Python 3 no Curso em Vídeo.
 
-O objetivo do projeto é criar um banco de dados
-usando puramente Python com tudo que foi visto desde o mundo 1.
+O objetivo do projeto é criar um mini banco de dados
+usando Python puro com tudo que foi visto desde o mundo 1.
 Ou seja, não há nada que envolva SQL neste projeto.
+
+A priori o professor só pede que seja possível inserir
+nome e idade, e posteriomente conseguir visualizar esses dados.
+Afim de exercitar meu aprendizado em Python vou implementar
+funções de exclusão e edição de dados.
 
 Todo o código aqui descrito foi feito sem "pescar"
 pelo o código original do professor.
+Obviamente ao final verifiquei se a lógica estava correta.
 
 Entendo que nesse contexto de aprendizado não há código certo ou errado,
 o código tem apenas que funcionar. E se está online significa que consegui.
