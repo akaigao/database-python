@@ -8,7 +8,7 @@ Gon Kilua;13
 Meliodas Alucard Maru;50
 Levi Ackerman;30
 Eren Yeager;15
-Luffy;19
+Monkey D. Luffy;20
 TesteUm;001
 TesteDois;002
 TesteTres;002
