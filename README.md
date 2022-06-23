@@ -2,7 +2,7 @@ Este é o projeto final proposto pelo professor Gustavo Guanabara
 no seu curso de Python 3 no Curso em Vídeo.
 
 O objetivo do projeto é criar um mini banco de dados
-usando Python puro com tudo que foi visto desde o mundo 1.
+usando Python puro com tudo que foi visto durante o curso.
 Ou seja, não há nada que envolva SQL neste projeto.
 
 A priori o professor só pede que seja possível inserir
