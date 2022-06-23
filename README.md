@@ -7,12 +7,12 @@ Ou seja, não há nada que envolva SQL neste projeto.
 
 A priori o professor só pede que seja possível inserir
 nome e idade, e posteriomente conseguir visualizar esses dados.
-Afim de exercitar meu aprendizado em Python vou implementar
-funções de exclusão e edição de dados.
+Afim de exercitar meu aprendizado em Python
+decidi implementar mais funções.
 
-Todo o código aqui descrito foi feito sem "pescar"
-pelo o código original do professor.
-Obviamente ao final verifiquei se a lógica estava correta.
+Todo o código escrito foi feito sem "pescar"
+pelo o código original do professor,
+mas ao final verifiquei se a lógica estava correta.
 
 Entendo que nesse contexto de aprendizado não há código certo ou errado,
 o código tem apenas que funcionar. E se está online significa que consegui.
