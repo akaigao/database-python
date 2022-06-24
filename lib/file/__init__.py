@@ -59,3 +59,21 @@ def change_file():
                     fl2.write(f'{name};{age}\n')
                 pointer += 1
             print('Cadastro alterado com sucesso!')
+
+
+def find_file():
+    search = validation.read_str('Procurar: ').capitalize()
+
+    with open('contatos.txt', 'r') as file:
+        found = False
+        for line in file:
+            date = line.split(';')
+            date[1] = date[1].replace('\n', '')
+
+            name_splited = date[0].split(' ')
+            for name in name_splited:
+                if name == search:
+                    found = True
+                    print(f'{date[0]:<30} {date[1]:>3} anos')
+        if not found:
+            print('Cadastro não econtrado!')

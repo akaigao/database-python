@@ -3,16 +3,8 @@ Meliodas;3000
 Alucard;598
 Naruto Uzumaki;19
 Sasuke Uchicha;19
-Gon Kilua;13
-Meliodas Alucard Maru;50
+Kilua;13
 Levi Ackerman;30
 Eren Yeager;15
 Monkey D. Luffy;20
-TesteUm;001
-TesteDois;002
-TesteTres;002
-TesteQuatro;004
-TesteCinco;005
-TesteSeis;6
-TesteOito;7
-TesteNove;9
+Roronoa Zoro;19

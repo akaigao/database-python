@@ -12,9 +12,10 @@ def menu(op=0):
 
     print(' 1 - Ver pessoas cadastradas\n',
           '2 - Cadastrar nova pessoa\n',
-          '3 - Alterar um cadastro\n',
-          '4 - Excluir um cadastro\n',
-          '5 - Sair do Sistema')
+          '3 - Procurar cadastro\n',
+          '4 - Alterar um cadastro\n',
+          '5 - Excluir um cadastro\n',
+          '6 - Sair do Sistema')
 
     print('-'*40)
     return validation.read_int(op)
@@ -32,16 +33,21 @@ def option(op=0):
         file.write_file()
 
     elif op == 3:
+        title('PROCURAR CADASTRO')
+
+        file.find_file()
+
+    elif op == 4:
         title('ALTERAR CADASTRO')
 
         file.change_file()
 
-    elif op == 4:
-        title('EXCLUSÃO DE CADASTRO')
+    elif op == 5:
+        title('EXCLUSSÃO DE CADASTRO')
 
         file.del_file()
 
-    elif op == 5:
+    elif op == 6:
         title('Saindo do sistema... Até logo!')
         return 5
 
